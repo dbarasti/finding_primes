@@ -18,11 +18,16 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -fopt-info-vec")
 
 # creating the target SecondAssignmentParallel
 add_executable(finding_primes main.cpp)
+add_library(master_worker STATIC master_worker.hpp)
 
 # set compiler
 target_compile_features(finding_primes PUBLIC cxx_std_17)
+target_compile_features(master_worker PUBLIC cxx_std_17)
+
+set_target_properties(master_worker PROPERTIES LINKER_LANGUAGE CXX)
 
 # link libraries
+target_link_libraries(finding_primes master_worker)
 target_link_libraries(finding_primes
         OpenMP::OpenMP_CXX
         Threads::Threads
