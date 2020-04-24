@@ -172,7 +172,7 @@ seq500 = 48
 seq1mln = 505.803
 seq10mln = 13319.9
 array scal1mln[2] = [1510.78,543.139]
-array scal10mln[2] = [237461,13397.8]
+array scal10mln[2] = [12324.2,13397.8]
 ## Last datafile plotted: "benchmark-10000000.txt"
-plot for [IDX=0:1] "data/benchmark-10000000.txt" i IDX u 1:(scal10mln[IDX+1]/$2) title columnheader(1) w lines smooth bezier, f(x) t "ideal"
+plot [][:50] for [IDX=0:1] "data/benchmark-10000000.txt" i IDX u 1:(scal10mln[IDX+1]/$2) title columnheader(1) w lines smooth bezier, f(x) t "ideal"
 #    EOF
