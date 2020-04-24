@@ -41,13 +41,13 @@ The benchmark depicts two situations:
 
 For each scenario I computed the execution time considering 1 up to 250 threads. Following are illustrated the plots with the metrics described. 
 
-![](gnuplot-scripts/img/speed1mln.png)
+![](plotting-and-data/img/speed1mln.png)
 
-![](gnuplot-scripts/img/speed10mln.png)
+![](plotting-and-data/img/speed10mln.png)
 
-![](gnuplot-scripts/img/scal1mln.png)
+![](plotting-and-data/img/scal1mln.png)
 
-![](gnuplot-scripts/img/scal10mln.png)
+![](plotting-and-data/img/scal10mln.png)
 
 
 ## Plotting
