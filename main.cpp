@@ -5,7 +5,7 @@
 #include <iostream>
 #include <vector>
 #include "MasterWorker.hpp"
-#include "ParallelForExec.h"
+#include "ParallelForExec.hpp"
 
 
 using ull = unsigned long long;

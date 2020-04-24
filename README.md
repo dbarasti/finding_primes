@@ -1,7 +1,10 @@
 # Finding primes
 
-This is the second assignment for the class of [Parallel and Distributed Systems](http://didawiki.di.unipi.it/doku.php/magistraleinformaticanetworking/spm/sdpm09support) @Unipi.  
-I developed two implementations for the problem of finding prime numbers among a given range, using different patterns provided by the [FastFlow library](http://calvados.di.unipi.it/).  
+This is the second assignment for the class of [Parallel and Distributed Systems](http://didawiki.di.unipi.it/doku.php/magistraleinformaticanetworking/spm/sdpm09support) @Unipi. I developed two implementations for the problem of finding prime numbers among a given range, using different patterns provided by the [FastFlow library](http://calvados.di.unipi.it/).  
+
+The two pattern are:
+* **Master Worker** farm (see file [MasterWorker.hpp](https://github.com/dbarasti/finding_primes/MasterWorker.hpp)) and
+* **Parallel for** (see file [ParallelForExec.hpp](https://github.com/dbarasti/finding_primes/ParallelForExec.hpp))
   
 
 ## Getting Started
@@ -46,7 +49,22 @@ For each scenario I computed the execution time considering 1 up to 250 threads.
 ![](gnuplot-scripts/img/scal10mln.png)
 
 
+## Plotting
+
+To obtain the data used in the results shown I built the project in two different ways: the first by leaving in ```main.cpp```  just the execution of the MasterWorker farm and the second by executing only the ParallelFor. Refer to [main.cpp](https://github.com/dbarasti/finding_primes/main.cpp) to understand what this means in practice.  
+The two executables must be put in a folder called ```builds/``` in order for the ```benchmark.sh``` script to work properly. These two executable should also be called respectively ```finding_primes_MW``` and ```finding_primes_PF```.  
+
+To change the namings just edit the variables in ```benchmark.sh```.
+
+Running the script with ```./benchmark.sh``` will generate the data for plotting in the folder ```plotting-and-data/data/```. To obtain the plots just open [Gnuplot](http://www.gnuplot.info/) from the folder ```plotting-and-data/``` and load the scripts with (e.g.)
+
+```load "<script-name.gp>"```
+ 
 
 ## Authors
 
 **Davide Barasti** in collaboration with my roommates [Giovanni](https://github.com/GiovanniSorice) and [Francesco](https://github.com/FraCorti)
+
+## Acknowledgments
+This project was developed for an assignment of the course [Parallel and Distributed Systems](http://didawiki.di.unipi.it/doku.php/magistraleinformaticanetworking/spm/sdpm09support) at University of Pisa under the guide of [Prof. Marco Danellutto](http://calvados.di.unipi.it/paragroup/danelutto/) and [Prof. Massimo Torquati](http://calvados.di.unipi.it/paragroup/torquati/).
+

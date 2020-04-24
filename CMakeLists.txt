@@ -17,7 +17,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "-Wall -Wextra -O0 -g -DDEBUG")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -fopt-info-vec")
 
 # creating the target SecondAssignmentParallel
-add_executable(finding_primes main.cpp ParallelForExec.h)
+add_executable(finding_primes main.cpp ParallelForExec.hpp)
 add_library(master_worker STATIC MasterWorker.hpp)
 
 # set compiler

@@ -4,7 +4,7 @@
   <component name="CidrRootsConfiguration">
     <excludeRoots>
       <file path="$PROJECT_DIR$/builds" />
-      <file path="$PROJECT_DIR$/gnuplot-scripts" />
+      <file path="$PROJECT_DIR$/plotting-and-data" />
     </excludeRoots>
   </component>
   <component name="JavaScriptSettings">
