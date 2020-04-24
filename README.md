@@ -3,8 +3,8 @@
 This is the second assignment for the class of [Parallel and Distributed Systems](http://didawiki.di.unipi.it/doku.php/magistraleinformaticanetworking/spm/sdpm09support) @Unipi. I developed two implementations for the problem of finding prime numbers among a given range, using different patterns provided by the [FastFlow library](http://calvados.di.unipi.it/).  
 
 The two patterns are:
-* **Master Worker** farm (see file [MasterWorker.hpp](https://github.com/dbarasti/finding_primes/MasterWorker.hpp)) and
-* **Parallel For** (see file [ParallelForExec.hpp](https://github.com/dbarasti/finding_primes/ParallelForExec.hpp))
+* **Master Worker** farm (see file [MasterWorker.hpp](https://github.com/dbarasti/finding_primes/blob/master/MasterWorker.hpp)) and
+* **Parallel For** (see file [ParallelForExec.hpp](https://github.com/dbarasti/finding_primes/blob/master/ParallelForExec.hpp))
   
 
 ## Getting Started
