@@ -19,16 +19,13 @@ int main(int argc, char *argv[]) {
     ull n2 = std::stoll(argv[2]);
     ull nWorkers = stoll(argv[3]);
 
-    auto pfp = new ParallelForExec(n1, n2, nWorkers);
-    pfp->run();
-
-    //formatting for gnuplot
-    cout << endl << endl;
+//    auto pfp = new ParallelForExec(n1, n2, nWorkers);
+//    pfp->run();
 
     auto *mwp = new MasterWorkerPrimes(n1, n2, nWorkers);
     mwp->run();
 
-    delete pfp;
+    //delete pfp;
     delete mwp;
 
 

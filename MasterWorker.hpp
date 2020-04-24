@@ -127,7 +127,7 @@ public:
         ffTime(START_TIME);
 
         //printing heading
-        cout << "\"MasterWorker\"" << endl;
+        //cout << "workers time" << endl;
 
         if (farm.run_and_wait_end() < 0) {
             error("running master-worker farm");

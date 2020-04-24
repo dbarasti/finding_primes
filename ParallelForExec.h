@@ -34,7 +34,7 @@ public:
 
         ff::ffTime(ff::START_TIME);
         //printing heading
-        cout << "\"ParallelFor\"" << endl;
+        //cout << "workers time" << endl;
 
         //parallel_for with step length 1 and chunk size 10 (dynamic)
         pf.parallel_for(starting, ending,
