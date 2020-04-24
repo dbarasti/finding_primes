@@ -2,9 +2,9 @@
 
 This is the second assignment for the class of [Parallel and Distributed Systems](http://didawiki.di.unipi.it/doku.php/magistraleinformaticanetworking/spm/sdpm09support) @Unipi. I developed two implementations for the problem of finding prime numbers among a given range, using different patterns provided by the [FastFlow library](http://calvados.di.unipi.it/).  
 
-The two pattern are:
+The two patterns are:
 * **Master Worker** farm (see file [MasterWorker.hpp](https://github.com/dbarasti/finding_primes/MasterWorker.hpp)) and
-* **Parallel for** (see file [ParallelForExec.hpp](https://github.com/dbarasti/finding_primes/ParallelForExec.hpp))
+* **Parallel For** (see file [ParallelForExec.hpp](https://github.com/dbarasti/finding_primes/ParallelForExec.hpp))
   
 
 ## Getting Started
@@ -20,6 +20,7 @@ cd build
 cmake ..
 ```
 in the root of the cloned project.  
+
 Now build the project:
 ```
 cmake --build .
@@ -34,7 +35,7 @@ The executable can be found in the ```build/``` directory. Just run it with:
 
 ## Results
 The experience results are summarized in some plots that express the scalability and the speedup obtained running the code on the Xeon-phi machine.  
-The benchmarks depict two situations:
+The benchmark depicts two situations:
 * finding primes in the range 1~1mln and
 * finding primes in the range 1~10mln.  
 
