@@ -47,7 +47,7 @@ unset raxis
 set theta counterclockwise right
 set style parallel front  lt black linewidth 2.000 dashtype solid
 set key title "" center
-set key fixed left top vertical Right noreverse enhanced autotitle nobox font ",11"
+set key fixed right top vertical Right noreverse enhanced autotitle nobox font ",11"
 set key noinvert samplen 4 spacing 1 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
@@ -174,5 +174,5 @@ seq10mln = 13319.9
 array scal1mln[2] = [1510.78,543.139]
 array scal10mln[2] = [237461,13397.8]
 ## Last datafile plotted: "benchmark-1000000.txt"
-plot for [IDX=0:1] "data/benchmark-1000000.txt" i IDX u 1:(scal1mln[IDX+1]/$2) title columnheader(1) w lines smooth bezier
+plot [][:50] for [IDX=0:1] "data/benchmark-1000000.txt" i IDX u 1:(scal1mln[IDX+1]/$2) title columnheader(1) w lines smooth bezier, f(x) t "ideal"
 #    EOF
